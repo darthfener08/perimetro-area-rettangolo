@@ -1,32 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Esercitazione PHP</title>
+    <title>Document</title>
 </head>
-
 <body>
-    <h1>Benvenuti nella pagina</h1>
-    <form action="calcola.php" method="POST">
-        <div>
-            <label for="base">
-                Inserisci la base:
-            </label>
-            <input type="text" name="base" id="base">
-        </div>
-        <div>
-            <label for="altezza">
-                Inserisci l'altezza:
-            </label>
-            <input type="text" name="altezza" id="altezza">
-        </div>
-        <div>
-            <button type="submit">Invia</button>
-        </div>
-    </form>
+    <?php
+        $a = 10;
+        $b = 1;
+        $c = 3;
+        $d = 12;
+        
+        $somma = $a + $b + $c + $d;
+
+        $media = $somma / 4;
+
+        $mediana = ($a + $c)/2;
+
+        echo " Somma = " . $somma;
+        echo "<br>";
+        echo " media = " . $media;
+        echo "<br>";
+        echo " mediana = " . $mediana;
+    ?>
 </body>
-
-
 </html>
